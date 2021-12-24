@@ -2,8 +2,16 @@ import type { Inputs } from "src/interface/types";
 import { formState } from "src/libs/state";
 
 export const changeForm = (data: Inputs) => {
-  formState.name = data.name;
-  formState.email = data.email;
-  formState.age = data.age;
-  formState.content = data.content;
+  if (data.name) {
+    formState.name = data.name;
+  }
+  if (data.age) {
+    formState.age = data.age;
+  }
+  if (data.email) {
+    formState.email = data.email;
+  }
+  if (data.content) {
+    formState.content = data.content;
+  }
 };
