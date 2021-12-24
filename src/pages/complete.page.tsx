@@ -1,11 +1,11 @@
 import type { VFC } from "react";
 import { useRouter } from "next/router";
+import { Layout } from "src/layouts/layout";
 
 const Complete: VFC = () => {
   const router = useRouter();
   return (
-    <main className="p-4 my-20 mx-auto w-80 border">
-      <h1 className="text-2xl text-center bg-blue-400">フォーム</h1>
+    <Layout>
       <p className="my-8 text-center">送信が完了しました</p>
       <button
         className="px-2 bg-gray-200 mx-auto block"
@@ -13,7 +13,7 @@ const Complete: VFC = () => {
       >
         トップへ戻る
       </button>
-    </main>
+    </Layout>
   );
 };
 
