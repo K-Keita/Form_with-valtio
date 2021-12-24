@@ -20,7 +20,7 @@ const Home: VFC = () => {
   } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (data) => {
     changeForm(data);
-    return router.push("/second");
+    return router.push("/confirm");
   };
 
   const state: Inputs = useSnapshot(formState);
