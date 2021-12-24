@@ -1,6 +1,3 @@
-import Head from "next/head";
-import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/router";
 import type { VFC } from "react";
 import type { SubmitHandler } from "react-hook-form";
@@ -54,7 +51,7 @@ const Home: VFC = () => {
         />
         {errors.email && <span>This field is required</span>}
         <input
-          className="block px-2 mx-auto bg-blue-200 mt-4"
+          className="block px-2 mx-auto mt-4 bg-blue-200"
           type="submit"
           value="次へ"
         />

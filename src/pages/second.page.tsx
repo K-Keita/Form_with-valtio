@@ -34,7 +34,7 @@ const Second: VFC = () => {
         />
         {errors.content && <span>This field is required</span>}
         <div className="flex justify-around mt-4">
-          <button className="px-2 bg-gray-200" onClick={() => router.push("/")}>
+          <button className="px-2 bg-gray-200" onClick={() => {return router.push("/")}}>
             戻る
           </button>
           <input

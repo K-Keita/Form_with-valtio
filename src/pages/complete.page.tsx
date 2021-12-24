@@ -1,5 +1,5 @@
-import type { VFC } from "react";
 import { useRouter } from "next/router";
+import type { VFC } from "react";
 import { Layout } from "src/layouts/layout";
 
 const Complete: VFC = () => {
@@ -8,8 +8,8 @@ const Complete: VFC = () => {
     <Layout>
       <p className="my-8 text-center">送信が完了しました</p>
       <button
-        className="px-2 bg-gray-200 mx-auto block"
-        onClick={() => router.push("/")}
+        className="block px-2 mx-auto bg-gray-200"
+        onClick={() => {return router.push("/")}}
       >
         トップへ戻る
       </button>
